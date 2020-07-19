@@ -1,0 +1,170 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+
+
+/* 
+    Created on : 22 Dec, 2019, 5:26:16 PM
+    Author     : shukla
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,700,800');
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+@import url(https://fonts.googleapis.com/css?family=Roboto);
+@import url(https://fonts.googleapis.com/css?family=Yellowtail);
+@import url(https://fonts.googleapis.com/css?family=Raleway);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800,300italic,400italic,600italic,700italic,800italic);
+@import '~ngx-owl-carousel-o/lib/styles/scss/owl.carousel';
+@import '~ngx-owl-carousel-o/lib/styles/scss/owl.theme.default';
+@font-face {
+    font-family: myWebFont;
+    src: url('/src/assets/fonts/batmfa__.ttf');
+}
+
+@font-face {
+    font-family: myWebFontOutline;
+    src: url('/src/assets/fonts/batmfo__.ttf');
+}
+
+html {
+    overflow: scroll;
+    overflow-x: hidden;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #FF0000;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Raleway", Arial, Helvetica, sans-serif
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    &:before,
+    &:after {
+        box-sizing: inherit;
+    }
+}
+
+body {
+    /*background: linear-gradient(rgb(255, 255, 255), rgba(141, 51, 155, 0.13));*/
+    background: white;
+    background-position: center;
+    background-size: cover;
+    background-repeat: repeat;
+}
+
+.heading-color {
+    color: #89339b !important;
+    font-family: Yellowtail;
+}
+
+.link-font {
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+/*li a.link-font:hover {
+    border-bottom: 4px solid;
+}*/
+
+.line-1 {
+    position: relative;
+    top: 50%;
+    margin: 0 auto;
+    font-size: 200%;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+
+/* Animation */
+
+.anim-typewriter {
+    animation: typewriter 4s steps(44) 1s 1 normal both, blinkTextCursor 500ms steps(44) infinite normal;
+}
+
+@keyframes typewriter {
+    from {
+        width: 0;
+    }
+    to {
+        width: 24em;
+    }
+}
+
+@keyframes blinkTextCursor {
+    from {
+        border-right-color: rgba(255, 255, 255, .75);
+    }
+    to {
+        border-right-color: transparent;
+    }
+}
+
+.cellphone-container {
+    background-color: #1e1b26;
+    border-radius: 4px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+
+.movie-img {
+    width: 100%;
+    height: 250px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 111 !important;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    -webkit-mask-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, rgba(0, 0, 0, 1)), color-stop(0.35, rgba(0, 0, 0, 1)), color-stop(0.5, rgba(0, 0, 0, 1)), color-stop(0.65, rgba(0, 0, 0, 1)), color-stop(0.85, rgba(0, 0, 0, 0.6)), color-stop(1, rgba(0, 0, 0, 0)));
+    position: relative;
+}
+
+
+/* Fonts */
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: 'Montserrat', sans-serif;
+    color: #e7e7e7;
+    margin: 0px;
+}
+
+h1 {
+    font-size: 36px;
+    font-weight: 400;
+}
+
+h3 {
+    font-size: 14px;
+    font-weight: 400;
+    color: #89339b !important;
+}
+
+h5 {
+    font-size: 12px;
+    font-weight: 400;
+}
